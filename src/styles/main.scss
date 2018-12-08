@@ -6,25 +6,50 @@
 @import "./partials/footer";
 @import "./partials/header";
 @import "./partials/contact.scss";
+
+@font-face {
+    font-family: '8944';
+    src: url('../font/8944.eot');
+    src: url('../font/8944.eot') format('embedded-opentype'),
+         url('../font/8944.woff2') format('woff2'),
+         url('../font/8944.woff') format('woff'),
+         url('../font/8944.ttf') format('truetype'),
+         url('../font/8944.svg#8944') format('svg');
+         font-weight: normal;
+         font-style: normal;
+}
+@font-face {
+    font-family: "TroikaRegular";
+    src: url("../font/TroikaRegular.eot");
+    src: url("../font/TroikaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../font/TroikaRegular.woff") format("woff"),
+    url("../font/TroikaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 @font-face {
     font-family: 'Troika';
-    src: url('../font/font/troika-webfont.eot');
+    src: url('../font/troika-webfont.eot');
     src: url('../font/troika-webfont.eot?#iefix') format('embedded-opentype'),
          url('../font/troika-webfont.woff2') format('woff2'),
          url('../font/troika-webfont.woff') format('woff'),
-         url('../.font/troika-webfont.ttf') format('truetype'),
+         url('../font/troika-webfont.ttf') format('truetype'),
          url('../font/troika-webfont.svg#troikaregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'CenturyGothic';
-    src: url('../../fonts/GOTHICB.eot');
-    src: url('../../fonts/GOTHICB.eot') format('embedded-opentype'),
-         url('../../fonts/GOTHICB.woff2') format('woff2'),
-         url('../../fonts/GOTHICB.woff') format('woff'),
-         url('../../fonts/GOTHICB.ttf') format('truetype'),
-         url('../../fonts/GOTHICB.svg#GOTHICB') format('svg');
+    src: url('../font/GOTHICB.eot');
+    src: url('../font/GOTHICB.eot') format('embedded-opentype'),
+         url('../font/GOTHICB.woff2') format('woff2'),
+         url('../font/GOTHICB.woff') format('woff'),
+         url('../font/GOTHICB.ttf') format('truetype'),
+         url('../font/GOTHICB.svg#GOTHICB') format('svg');
+         font-weight: normal;
+         font-style: normal;
 }
 
 h1,
@@ -311,91 +336,228 @@ button {
     border-radius: 30px;
 }
 
-@media screen and (max-width: 1200px) {
-    .footer-adress {
-        font-size: 24px;
-    }
-    .whom-h3 {
-        font-size: 28px;
-    }
-}
-    @media screen and (max-width: 992px) {
-        .nav-elem {
-            width: 160px;
-        height: 160px;
-        }
-        .contact-h3 {
-            font-size: 1.6em;
-        }
-    }
 
-    @media screen and (max-width: 767px) and (min-width: 421px){
-        .footer-adress {
-            font-size: 20px;
-        }
-       
-      
-        .logo-footer {
-            display: none;
-        }
-        .logo {
-            width: 200px;
-        }
-        .wrapper__title {
-            h2 {
-                text-align: center;
-            }
-            
-        }
-        .main-info {
-            margin-top: 60px;
+        .price-about {
             p {
-
+                font-family: CenturyGothic;
+                font-size: 22px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.54;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+                padding: 20px;
             }
         }
-       
-        }
-        @media screen and (max-width: 420px) {
-            .logo {
-                img {
-                    width: 70%;
-                }
-            }
-            .wrapper__title h2 {
+        .product-list {
+            margin-top: 30px; 
+            margin-bottom: 30px;
+            p {
+                font-family: CenturyGothic;
+                font-size: 22px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.54;
+                letter-spacing: normal;
                 text-align: center;
+                color: #000000;
+                text-transform: uppercase;
             }
-            .nav-box:first-child {
-                padding-top: 50px;
-            }
-            .nav-box:last-child {
-                padding-bottom: 50px;
-            }
-            .whom-h3 {
-                font-size: 1.3em;
-                width: 60%;
-            }
-            .logo-footer {
-                width: 140px;
-            }
-            .footer-adress {
-                font-size: 15px;
-            }
-            .what-h3 {
-                font-size: 1.5em;
-            }
-            .nav-elem {
-                width: 100%;
-                height: auto;
-                a {
-                    h3 {
-                        font-size: 40px;
+            .list-block {
+                position: relative;
+                ul{
+                
+                    
+                    li {
+                        font-family: CenturyGothic;
+                        font-size: 20px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.54;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #000000;
+                    
                     }
                 }
-                img {
-                    width: 130px;
                 }
+         
+        }
+        .price-h3 {
+            position: absolute;
+                top: 38%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                text-shadow: 4.5px 7.8px 5px rgba(0,0,0,.93);
+                font-family: Troika;
+                font-size: 2.2em;
+                font-weight: 400;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #b3f05a;
+                text-transform: uppercase;
+                margin-top: 10px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .footer-adress {
+                font-size: 24px;
             }
-            .contact-h3 {
-                font-size: 1.2em;
+            .whom-h3 {
+                font-size: 28px;
             }
         }
+            @media screen and (max-width: 992px) {
+                .nav-elem {
+                    width: 160px;
+                height: 160px;
+                }
+                .contact-h3 {
+                    font-size: 1.6em;
+                }
+            }
+        
+            @media screen and (max-width: 767px) and (min-width: 421px){
+                .footer-adress {
+                    font-size: 20px;
+                }
+               
+              
+                .logo-footer {
+                    display: none;
+                }
+                .logo {
+                    width: 200px;
+                }
+                .wrapper__title {
+                    h2 {
+                        text-align: center;
+                    }
+                    
+                }
+                .main-info {
+                    margin-top: 60px;
+                    p {
+        
+                    }
+                }
+               
+                }
+                @media screen and (max-width: 420px) {
+                    .logo {
+                        img {
+                            width: 70%;
+                        }
+                    }
+                    .wrapper__title h2 {
+                        text-align: center;
+                    }
+                    .nav-box:first-child {
+                        padding-top: 50px;
+                    }
+                    .nav-box:last-child {
+                        padding-bottom: 50px;
+                    }
+                    .whom-h3 {
+                        font-size: 1.3em;
+                        width: 60%;
+                    }
+                    .logo-footer {
+                        width: 140px;
+                    }
+                    .footer-adress {
+                        font-size: 15px;
+                    }
+                    .what-h3 {
+                        font-size: 1.5em;
+                    }
+                    .nav-elem {
+                        width: 100%;
+                        height: auto;
+                        a {
+                            h3 {
+                                font-size: 40px;
+                            }
+                        }
+                        img {
+                            width: 130px;
+                        }
+                    }
+                    .contact-h3 {
+                        font-size: 1.2em;
+                    }
+                    .price-about p {
+                        font-size: 18px 
+                    }
+                }
+                header {
+                    background: url(../img/header.jpg);
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    height: 320px;
+                    min-height: 200px;
+                
+                    .wrapper__title {
+                    }
+                
+                }
+                .wrapper__title h2 {
+                    font-family: Troika;
+                    font-size: 22px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: right;
+                    color: #ffffff;
+                }
+                
+                .wrap {
+                    width: 1200px;
+                    margin: 0 auto;
+                }
+                .header-padding {
+                    padding-top: 20px;
+                }
+                .nav-box {
+                    padding-top: 25px;
+                    position: relative;
+                }
+                .nav-elem {
+                    width: 200px;
+                    height: 200px;
+                    position: relative;
+                        a {
+                            display: block;
+                            position: absolute;
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            margin-right: -50%;
+                            transform: translate(-50%, -50%);
+                                h3 {
+                                    text-shadow: 4px 4.2px 5px rgba(0, 0, 0, 0.66);
+                                    font-family: Troika;
+                                    font-size: 52px;
+                                    font-weight: bold;
+                                    font-style: bold;
+                                    font-stretch: normal;
+                                    line-height: normal;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color: #ffffff;
+                                }
+                               
+                        }
+                }
