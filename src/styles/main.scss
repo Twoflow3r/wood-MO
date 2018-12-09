@@ -7,50 +7,6 @@
 @import "./partials/header";
 @import "./partials/contact.scss";
 
-@font-face {
-    font-family: '8944';
-    src: url('../font/8944.eot');
-    src: url('../font/8944.eot') format('embedded-opentype'),
-         url('../font/8944.woff2') format('woff2'),
-         url('../font/8944.woff') format('woff'),
-         url('../font/8944.ttf') format('truetype'),
-         url('../font/8944.svg#8944') format('svg');
-         font-weight: normal;
-         font-style: normal;
-}
-@font-face {
-    font-family: "TroikaRegular";
-    src: url("../font/TroikaRegular.eot");
-    src: url("../font/TroikaRegular.eot?#iefix")format("embedded-opentype"),
-    url("../font/TroikaRegular.woff") format("woff"),
-    url("../font/TroikaRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Troika';
-    src: url('../font/troika-webfont.eot');
-    src: url('../font/troika-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/troika-webfont.woff2') format('woff2'),
-         url('../font/troika-webfont.woff') format('woff'),
-         url('../font/troika-webfont.ttf') format('truetype'),
-         url('../font/troika-webfont.svg#troikaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'CenturyGothic';
-    src: url('../font/GOTHICB.eot');
-    src: url('../font/GOTHICB.eot') format('embedded-opentype'),
-         url('../font/GOTHICB.woff2') format('woff2'),
-         url('../font/GOTHICB.woff') format('woff'),
-         url('../font/GOTHICB.ttf') format('truetype'),
-         url('../font/GOTHICB.svg#GOTHICB') format('svg');
-         font-weight: normal;
-         font-style: normal;
-}
 
 h1,
 h2,
@@ -60,24 +16,95 @@ p {
     padding: 0;
     margin: 0;
 }
+
 a:hover {
     text-decoration: none;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-input, button {
+
+input,
+button {
     border-width: 0px;
     border-style: none;
     border-color: none;
     border-color: none;
     border-image: none;
 }
+	@font-face {
+			font-family: "Troika";
+            src: url("../fonts/TroikaRegular.eot");
+			src: url("../fonts/TroikaRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/TroikaRegular.woff") format("woff"),
+			url("../fonts/TroikaRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+    }
+
+    
+    @font-face {
+        font-family: 'Century Gothic';
+        src: url('../fonts/ofont_ru_Century Gothic.eot');
+        src: url('../fonts/ofont_ru_Century Gothic.eot') format('embedded-opentype'),
+             url('../fonts/ofont_ru_Century Gothic.woff2') format('woff2'),
+             url('../fonts/ofont_ru_Century Gothic.woff') format('woff'),
+             url('../fonts/ofont_ru_Century Gothic.ttf') format('truetype'),
+             url('../fonts/ofont_ru_Century Gothic.svg#ofont_ru_Century Gothic') format('svg');
+             font-style: normal;
+			font-weight: normal;
+    }
+   
+    @font-face {
+        font-family: "Century Gothic";
+        src: url('../fonts/Century Gothic-Italic.eot');
+        src: local('../fonts/Century Gothic Italic'), local('Century Gothic-Italic'),
+            url('../fonts/Century Gothic-Italic.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Century Gothic-Italic.woff') format('woff'),
+            url('../fonts/Century Gothic-Italic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: "Century Gothic";
+        src: url('../fonts/Century Gothic.eot');
+        src: local('../fonts/Century Gothic'), local('Century Gothic'),
+            url('../fonts/Century Gothic.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Century Gothic.woff') format('woff'),
+            url('../fonts/Century Gothic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: "Century Gothic";
+        src: url('../fonts/Century Gothic-Bold.eot');
+        src: local('../fonts/Century Gothic Bold'), local('Century Gothic-Bold'),
+            url('../fonts/Century Gothic-Bold.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Century Gothic-Bold.woff') format('woff'),
+            url('../fonts/Century Gothic-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: "Century Gothic";
+        src: url('../fonts/Century Gothic-BoldItalic.eot');
+        src: local('../fonts/Century Gothic Bold Italic'), local('Century Gothic-BoldItalic'),
+            url('../fonts/Century Gothic-BoldItalic.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Century Gothic-BoldItalic.woff') format('woff'),
+            url('../fonts/Century Gothic-BoldItalic.ttf') format('truetype');
+        font-weight: bold;
+        font-style: italic;
+    }
+    
 body {
     background-color: #ffffff;
-    font-family: "Helvetica", Arial, sans-serif;
+
     align-items: center;
     text-align: center;
     overflow-x: hidden;
@@ -97,35 +124,38 @@ img {
 
 .main-info {
     margin-top: 20px;
-        p {
-            font-family: CenturyGothic;
-            font-size: 24px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: left;
-            color: #000000;
-            span {
-                font-weight: bold;
-            }
+
+    p {
+        font-family: Century Gothic;
+        font-size: 24px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+
+        span {
+            font-weight: bold;
         }
-    
+    }
+
 }
 
 .whom-block {
     margin-top: 40px;
     position: relative;
 }
+
 .whom-h3 {
     display: block;
     position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-    text-shadow: 4px 4.2px 1px rgba(0,0,0,.66);
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 4px 4.2px 1px rgba(0, 0, 0, .66);
     font-family: Troika;
     font-size: 2.4em;
     font-weight: bold;
@@ -136,6 +166,7 @@ img {
     text-align: center;
     color: #ffffff;
 }
+
 /*
 .whom-h3::after {
     content: '';
@@ -153,24 +184,25 @@ img {
 .whom-card {
     min-width: 200px;
     padding-top: 70px;
-    
-        p {
-            padding-top: 15px;
-            font-family: CenturyGothic;
-            font-size: 18px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.54;
-            letter-spacing: normal;
-            text-align: center;
-            color: #000000;
-            width: 80%;
-            margin: 0 auto;
-        }
-        img {
-            width: 150px;
-        }
+
+    p {
+        padding-top: 15px;
+        font-family: Century Gothic;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.54;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 150px;
+    }
 }
 
 .what-h3 {
@@ -180,8 +212,8 @@ img {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    text-shadow: 4px 4.2px 1px rgba(0,0,0,.66);
-    text-shadow: 4px 4.2px 1px rgba(0,0,0,.66);
+    text-shadow: 4px 4.2px 1px rgba(0, 0, 0, .66);
+    text-shadow: 4px 4.2px 1px rgba(0, 0, 0, .66);
     font-family: Troika;
     font-size: 40px;
     font-weight: bold;
@@ -193,17 +225,17 @@ img {
     color: #ffffff;
 }
 
-.centeder-text-in-image {
-  
-}
+.centeder-text-in-image {}
+
 @mixin centeder-text-in-image() {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-  }
-  .contact-h3 {
+}
+
+.contact-h3 {
     @include centeder-text-in-image();
     display: block;
     text-shadow: 6.5px 11.3px 5px rgba(0, 0, 0, 0.84);
@@ -221,23 +253,26 @@ img {
 
 .contact-head {
     margin-top: 30px;
-    position: relative;;
+    position: relative;
+    ;
 }
 
 .contact-center-block-margin {
     margin-top: 35px;
 }
+
 .arrow-img {
     margin-top: 8%;
     margin-bottom: 8%;
+
     img {
         max-width: 130px;
         height: auto;
-        
+
     }
 }
 
-.contact-go-to-map{
+.contact-go-to-map {
     @include centeder-text-in-image();
     text-shadow: 6.5px 11.3px 5px rgba(0, 0, 0, 0.91);
     font-family: Troika;
@@ -253,7 +288,7 @@ img {
 }
 
 .red-alert {
-    font-family: CenturyGothic;
+    font-family: Century Gothic;
     font-size: 24px;
     font-weight: normal;
     font-style: normal;
@@ -265,22 +300,24 @@ img {
     color: #ff3950;
     text-transform: uppercase;
 }
+
 .contact-info {
     margin-top: 20%;
 
-        font-family: CenturyGothic;
-        font-size: 18px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.41;
-        letter-spacing: normal;
-        text-align: right;
-        color: #000000;
-    
+    font-family: Century Gothic;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+
 }
-.content-bottom-text{
-    font-family: CenturyGothic;
+
+.content-bottom-text {
+    font-family: Century Gothic;
     font-size: 34px;
     font-weight: normal;
     font-style: normal;
@@ -293,8 +330,9 @@ img {
 
 form {
     @include centeder-text-in-image();
-    
+
 }
+
 .form-caption {
     text-shadow: 4.5px 7.8px 5px rgba(0, 0, 0, 0.93);
     font-family: Troika;
@@ -309,6 +347,7 @@ form {
     text-transform: uppercase;
     margin-top: 10px;
 }
+
 .form-group {
     width: 60%;
     margin: 10px auto;
@@ -337,10 +376,47 @@ button {
 }
 
 
-        .price-about {
-            p {
-                font-family: CenturyGothic;
-                font-size: 22px;
+.price-about {
+    p {
+        font-family: Century Gothic;
+        font-size: 22px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.54;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+        padding: 20px;
+    }
+}
+
+.product-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    p {
+        font-family: Century Gothic;
+        font-size: 22px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.54;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+        text-transform: uppercase;
+    }
+
+    .list-block {
+        position: relative;
+
+        ul {
+
+
+            li {
+                font-family: Century Gothic;
+                font-size: 20px;
                 font-weight: normal;
                 font-style: normal;
                 font-stretch: normal;
@@ -348,216 +424,209 @@ button {
                 letter-spacing: normal;
                 text-align: left;
                 color: #000000;
-                padding: 20px;
+
             }
         }
-        .product-list {
-            margin-top: 30px; 
-            margin-bottom: 30px;
-            p {
-                font-family: CenturyGothic;
-                font-size: 22px;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.54;
-                letter-spacing: normal;
-                text-align: center;
-                color: #000000;
-                text-transform: uppercase;
-            }
-            .list-block {
-                position: relative;
-                ul{
-                
-                    
-                    li {
-                        font-family: CenturyGothic;
-                        font-size: 20px;
-                        font-weight: normal;
-                        font-style: normal;
-                        font-stretch: normal;
-                        line-height: 1.54;
-                        letter-spacing: normal;
-                        text-align: left;
-                        color: #000000;
-                    
-                    }
-                }
-                }
-         
-        }
-        .price-h3 {
-            position: absolute;
-                top: 38%;
-                left: 50%;
-                margin-right: -50%;
-                transform: translate(-50%, -50%);
-                text-shadow: 4.5px 7.8px 5px rgba(0,0,0,.93);
-                font-family: Troika;
-                font-size: 2.2em;
-                font-weight: 400;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: center;
-                color: #b3f05a;
-                text-transform: uppercase;
-                margin-top: 10px;
+    }
+
+}
+
+.price-h3 {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 4.5px 7.8px 5px rgba(0, 0, 0, .93);
+    font-family: Troika;
+    font-size: 2.2em;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b3f05a;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer-adress {
+        font-size: 24px;
+    }
+
+    .whom-h3 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-elem {
+        width: 160px;
+        height: 160px;
+    }
+
+    .contact-h3 {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 421px) {
+    .footer-adress {
+        font-size: 20px;
+    }
+
+
+    .logo-footer {
+        display: none;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .wrapper__title {
+        h2 {
+            text-align: center;
         }
 
-        @media screen and (max-width: 1200px) {
-            .footer-adress {
-                font-size: 24px;
-            }
-            .whom-h3 {
-                font-size: 28px;
+    }
+
+    .main-info {
+        margin-top: 60px;
+
+        p {}
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .logo {
+        img {
+            width: 70%;
+        }
+    }
+
+    .wrapper__title h2 {
+        text-align: center;
+    }
+
+    .nav-box:first-child {
+        padding-top: 50px;
+    }
+
+    .nav-box:last-child {
+        padding-bottom: 50px;
+    }
+
+    .whom-h3 {
+        font-size: 1.3em;
+        width: 60%;
+    }
+
+    .logo-footer {
+        width: 140px;
+    }
+
+    .footer-adress {
+        font-size: 15px;
+    }
+
+    .what-h3 {
+        font-size: 1.5em;
+    }
+
+    .nav-elem {
+        width: 100%;
+        height: auto;
+
+        a {
+            h3 {
+                font-size: 40px;
             }
         }
-            @media screen and (max-width: 992px) {
-                .nav-elem {
-                    width: 160px;
-                height: 160px;
-                }
-                .contact-h3 {
-                    font-size: 1.6em;
-                }
-            }
-        
-            @media screen and (max-width: 767px) and (min-width: 421px){
-                .footer-adress {
-                    font-size: 20px;
-                }
-               
-              
-                .logo-footer {
-                    display: none;
-                }
-                .logo {
-                    width: 200px;
-                }
-                .wrapper__title {
-                    h2 {
-                        text-align: center;
-                    }
-                    
-                }
-                .main-info {
-                    margin-top: 60px;
-                    p {
-        
-                    }
-                }
-               
-                }
-                @media screen and (max-width: 420px) {
-                    .logo {
-                        img {
-                            width: 70%;
-                        }
-                    }
-                    .wrapper__title h2 {
-                        text-align: center;
-                    }
-                    .nav-box:first-child {
-                        padding-top: 50px;
-                    }
-                    .nav-box:last-child {
-                        padding-bottom: 50px;
-                    }
-                    .whom-h3 {
-                        font-size: 1.3em;
-                        width: 60%;
-                    }
-                    .logo-footer {
-                        width: 140px;
-                    }
-                    .footer-adress {
-                        font-size: 15px;
-                    }
-                    .what-h3 {
-                        font-size: 1.5em;
-                    }
-                    .nav-elem {
-                        width: 100%;
-                        height: auto;
-                        a {
-                            h3 {
-                                font-size: 40px;
-                            }
-                        }
-                        img {
-                            width: 130px;
-                        }
-                    }
-                    .contact-h3 {
-                        font-size: 1.2em;
-                    }
-                    .price-about p {
-                        font-size: 18px 
-                    }
-                }
-                header {
-                    background: url(../img/header.jpg);
-                    width: 100%;
-                    background-size: cover;
-                    background-position: center;
-                    height: 320px;
-                    min-height: 200px;
-                
-                    .wrapper__title {
-                    }
-                
-                }
-                .wrapper__title h2 {
-                    font-family: Troika;
-                    font-size: 22px;
-                    font-weight: bold;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    text-align: right;
-                    color: #ffffff;
-                }
-                
-                .wrap {
-                    width: 1200px;
-                    margin: 0 auto;
-                }
-                .header-padding {
-                    padding-top: 20px;
-                }
-                .nav-box {
-                    padding-top: 25px;
-                    position: relative;
-                }
-                .nav-elem {
-                    width: 200px;
-                    height: 200px;
-                    position: relative;
-                        a {
-                            display: block;
-                            position: absolute;
-                            display: block;
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            margin-right: -50%;
-                            transform: translate(-50%, -50%);
-                                h3 {
-                                    text-shadow: 4px 4.2px 5px rgba(0, 0, 0, 0.66);
-                                    font-family: Troika;
-                                    font-size: 52px;
-                                    font-weight: bold;
-                                    font-style: bold;
-                                    font-stretch: normal;
-                                    line-height: normal;
-                                    letter-spacing: normal;
-                                    text-align: left;
-                                    color: #ffffff;
-                                }
-                               
-                        }
-                }
+
+        img {
+            width: 130px;
+        }
+    }
+
+    .contact-h3 {
+        font-size: 1.2em;
+    }
+
+    .price-about p {
+        font-size: 18px
+    }
+}
+
+header {
+    background: url(../img/header.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    min-height: 200px;
+
+    .wrapper__title {}
+
+}
+
+.wrapper__title h2 {
+    font-family: Troika;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ffffff;
+    text-shadow: 3px 2.9px 2px rgba(0,0,0,.85)
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header-padding {
+    padding-top: 20px;
+}
+
+.nav-box {
+    padding-top: 25px;
+    position: relative;
+}
+
+.nav-elem {
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+    a {
+        display: block;
+        position: absolute;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+
+        h3 {
+            text-shadow: 4px 4.2px 5px rgba(0, 0, 0, 0.66);
+            font-family: Troika;
+            font-size: 52px;
+            font-weight: bold;
+            font-style: bold;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
+    }
+}
