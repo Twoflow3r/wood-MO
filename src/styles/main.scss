@@ -79,7 +79,7 @@ button {
         font-weight: normal;
         font-style: normal;
     }
-    
+
     @font-face {
         font-family: "Century Gothic";
         src: url('../fonts/Century Gothic-Bold.eot');
@@ -120,7 +120,9 @@ img {
 
 }
 
-
+.nav-elem-mobile {
+    display: none;
+}
 
 .main-info {
     margin-top: 20px;
@@ -142,7 +144,10 @@ img {
     }
 
 }
-
+.only-mobile {
+    display: none;
+    margin-top: 20px;
+}
 .whom-block {
     margin-top: 40px;
     position: relative;
@@ -202,6 +207,79 @@ img {
 
     img {
         width: 150px;
+    }
+}
+
+header {
+    background: url(../img/header.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    min-height: 200px;
+
+    .wrapper__title {}
+
+}
+
+.wrapper__title h2 {
+    font-family: Troika;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ffffff;
+    text-shadow: 3px 2.9px 2px rgba(0,0,0,.85)
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header-padding {
+    padding-top: 20px;
+}
+.footer-padding {
+    padding-top: 20px;
+}
+
+.nav-box {
+    padding-top: 25px;
+    position: relative;
+}
+
+.nav-elem {
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+    a {
+        display: block;
+        position: absolute;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+
+        h3 {
+            text-shadow: 4px 4.2px 5px rgba(0, 0, 0, 0.66);
+            font-family: Troika;
+            font-size: 52px;
+            font-weight: bold;
+            font-style: bold;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
     }
 }
 
@@ -416,7 +494,7 @@ button {
 
             li {
                 font-family: Century Gothic;
-                font-size: 20px;
+                font-size: 22px;
                 font-weight: normal;
                 font-style: normal;
                 font-stretch: normal;
@@ -437,7 +515,7 @@ button {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    text-shadow: 4.5px 7.8px 5px rgba(0, 0, 0, .93);
+    text-shadow: 4px 4.2px 5px rgba(0,0,0,.66);
     font-family: Troika;
     font-size: 2.2em;
     font-weight: 400;
@@ -492,26 +570,124 @@ button {
         }
 
     }
+    .nav-elem {
+        display: none;
+    }
 
     .main-info {
         margin-top: 60px;
 
         p {}
     }
-
+    footer {
+        height: auto;
+    }
+    .footer-adress {
+        text-align: center;
+    }
+    .nav-elem-mobile {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        display: block;
+    
+        a {
+            display: block;
+            position: absolute;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+    
+            h3 {
+                text-shadow: 4px 4.2px 5px rgba(0, 0, 0, 0.66);
+                font-family: Troika;
+                font-size: 20px;
+                font-weight: bold;
+                font-style: bold;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #ffffff;
+            }
+    
+        }
+    }
+    
+  
+}
+@media screen and (max-width: 768px) {
+    .nav-elem-mobile {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        display: block;
+    
+        a {
+            display: block;
+            position: absolute;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+    
+            h3 {
+                text-shadow: 4px 4.2px 5px rgba(0, 0, 0, 0.66);
+                font-family: Troika;
+                font-size: 20px;
+                font-weight: bold;
+                font-style: bold;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #ffffff;
+            }
+    
+        }
+    }
 }
 
 @media screen and (max-width: 420px) {
+    
+    
+    
+    .footer-padding {
+        padding: 10px;
+    }
+
+    .nav-box {
+        display: block;
+    }
+
+    .main-info p {
+        font-size: 12px;
+    }
+    .only-mobile {
+        display: block;
+    }
     .logo {
         img {
             width: 70%;
         }
     }
-
+    .nav-elem {
+        display: none;
+    }
+    
     .wrapper__title h2 {
         text-align: center;
+        margin-top: 20px;
     }
-
+    footer {
+        height: auto;
+        min-height: 0;
+    }
     .nav-box:first-child {
         padding-top: 50px;
     }
@@ -524,7 +700,16 @@ button {
         font-size: 1.3em;
         width: 60%;
     }
-
+    .price-h3 {
+        font-size: 1.1em;
+        width: 60%;
+    }
+    .product-list p {
+        font-size: 14px;
+    }
+    .product-list .list-block ul li {
+        font-size: 12px;
+    }
     .logo-footer {
         width: 140px;
     }
@@ -559,74 +744,51 @@ button {
     .price-about p {
         font-size: 18px
     }
-}
-
-header {
-    background: url(../img/header.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    height: 320px;
-    min-height: 200px;
-
-    .wrapper__title {}
-
-}
-
-.wrapper__title h2 {
-    font-family: Troika;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: right;
-    color: #ffffff;
-    text-shadow: 3px 2.9px 2px rgba(0,0,0,.85)
-}
-
-.wrap {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.header-padding {
-    padding-top: 20px;
-}
-
-.nav-box {
-    padding-top: 25px;
-    position: relative;
-}
-
-.nav-elem {
-    width: 200px;
-    height: 200px;
-    position: relative;
-
-    a {
-        display: block;
-        position: absolute;
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-
-        h3 {
-            text-shadow: 4px 4.2px 5px rgba(0, 0, 0, 0.66);
-            font-family: Troika;
-            font-size: 52px;
-            font-weight: bold;
-            font-style: bold;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: left;
-            color: #ffffff;
-        }
-
+    footer {
+        height: auto;
+    }
+    .footer-adress {
+        text-align: center;
     }
 }
+@media screen and (max-width: 768px) {
+    .only-mobile {
+        display: block;
+    }
+    .nav-elem-mobile {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        display: block;
+    
+        a {
+            display: block;
+            position: absolute;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+    
+            h3 {
+                text-shadow: 4px 4.2px 5px rgba(0, 0, 0, 0.66);
+                font-family: Troika;
+                font-size: 20px;
+                font-weight: bold;
+                font-style: bold;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #ffffff;
+            }
+    
+        }
+    }
+}
+
+.col-mobile-content {
+    margin-left: 14%;
+}
+
