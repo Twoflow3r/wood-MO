@@ -167,17 +167,17 @@
        
         
         <div class="container main-info">
-            <div class="row">
-                <div class="col-md-4 hidden-xs">
-                    <form>
-                        <h5 class="form-caption">ОСТАВИТЬ ЗАЯВКУ</h5>
-                        <input class="form-group" placeholder="Ваше имя.. ">
-                        <input class="form-group" placeholder="Телефон...">
-                        <button class="">отправить</button>
-                     
-                    </form>
-                    <img src="../img/contact-form-img.png">
-                </div>
+                <div class="row">
+                    <div class="col-md-4 hidden-xs">
+                        <form id='form'>
+                            <h5 class="form-caption">ОСТАВИТЬ ЗАЯВКУ</h5>
+                            <input class="form-group" name="name" required placeholder="Ваше имя.. ">
+                            <input class="form-group" name="phone" required placeholder="Телефон...">
+                            <button class="">отправить</button>
+                         
+                        </form>
+                        <img src="./img/contact-form-img.png">
+                    </div>
 
                 <div class="col-md-7">
                     <p class="main-info contact-info">Смело обращайтесь к нам по любым вопросам
@@ -201,7 +201,27 @@
     </main>
     //= blocks/footer.html
 </div>
-<script src="../js/main.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("#form").submit(function(e) { //устанавливаем событие отправки для формы с id=form
+        e.preventDefault();
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "send.php", //путь до php фаила отправителя
+            data: form_data,
+            success: (function() {
+                  //код в этом блоке выполняется при успешной отправке сообщения
+                  alert("Ваше сообщение отпрвлено!");
+                  $("button").remove();
+                  $(".form-group").remove();
+                  $('.form-caption').text('сообщение отправлено');
+            })
+            });
+    });
+});    
+    </script>
 </body>
 
 </html>

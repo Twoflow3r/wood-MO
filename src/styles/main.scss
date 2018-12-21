@@ -525,7 +525,7 @@ button {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    text-shadow: 4px 4.2px 5px rgba(0,0,0,.66);
+    text-shadow: 4px 2.2px 5px rgba(0,0,0,.66);
     font-family: Troika;
     font-size: 2.2em;
     font-weight: 400;
@@ -719,6 +719,7 @@ button {
     .price-h3 {
         font-size: 1.1em;
         width: 60%;
+        top:30%;
     }
     .product-list p {
         font-size: 14px;
